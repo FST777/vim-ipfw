@@ -19,11 +19,11 @@ with:
 ```awk
 #!/usr/bin/awk -f
 BEGIN {
-    x=2000                              # Start rule-numbering at 2000
+    x=2000                  # Start rule-numbering at 2000
 }
-!/^(#|[[:space:]]*$)/ {                 # Only format and print non-comment, non-empty lines
-    gsub(/#.*$/, "")                    # Strip trailing comments
-    print "add "x" "$0                  # Add the rule with the current number
-    x = x + 10                          # Increment the rule-number
+!/^(#|[[:space:]]*$)/ {     # Only format and print non-comment, non-empty lines
+    gsub(/#.*$/, "")        # Strip trailing comments
+    print "add "x" "$0      # Add the rule with the current number
+    x = x + 10              # Increment the rule-number
 }
 ```
