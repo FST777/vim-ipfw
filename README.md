@@ -4,10 +4,12 @@ Syntax-highlighting for IPFW-based rule-files. This was specifically made to hig
 
 ## Installation
 
-Installation via [Pathogen](https://github.com/tpope/vim-pathogen) is recommended.
+Just copy the files in your ~/.vim/ directory.
 
 
 ## Usage
+
+For actual syntax highlighting, `:setfiletype ipfw` inside vim or add `# vim: set syntax=ipfw` at the end of your file.
 
 A tabulated rule-set without rulenumbers works best. On FreeBSD, it can be nicely used via:
 ```sh
