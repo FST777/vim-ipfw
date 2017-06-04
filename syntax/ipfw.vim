@@ -13,10 +13,10 @@ endif
 " Comments
 syn match   IPFWComment     /#.*$/ contains=ipfwTodo
 syn match   IPFWComment     /\/\/.*$/
-syn keyword IPFWTodo        TODO XXX FIXME containedo
+syn keyword IPFWTodo        TODO XXX FIXME contained
 
 " IPFW keywords
-syn keyword IPFWInstruction add list show pip queue sched config log tag untag
+syn keyword IPFWInstruction add list show pipe queue sched config log tag untag
 syn keyword IPFWInstruction altq prob
 syn keyword IPFWActionBlock deny drop reject unreach unreach6 reset reset6
 syn keyword IPFWActionPass  allow accept pass permit
